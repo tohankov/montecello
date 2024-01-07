@@ -1,0 +1,11 @@
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        background: none;
+        border: 1px solid var(--c-white);
+        opacity: 1;
+        margin-bottom: 40px;
+        &-active {
+            background: var(--c-white);
+        }
+    }
+}

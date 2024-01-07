@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moticello</title>
     <!-- * Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -79,17 +89,32 @@
           <!-- Social -->
           <ul class="social">
             <li class="social__item">
-              <a href="https://www.facebook.com/" class="social__link" target="_blank" title="Facebook">
+              <a
+                href="https://www.facebook.com/"
+                class="social__link"
+                target="_blank"
+                title="Facebook"
+              >
                 <svg class="icon"><use xlink:href="#icon-facebook"></use></svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="https://www.twitter.com/" class="social__link" target="_blank" title="Twitter">
+              <a
+                href="https://www.twitter.com/"
+                class="social__link"
+                target="_blank"
+                title="Twitter"
+              >
                 <svg class="icon"><use xlink:href="#icon-twitter"></use></svg
               ></a>
             </li>
             <li class="social__item">
-              <a href="https://www.Instagram.com/" class="social__link" target="_blank" title="Instagram">
+              <a
+                href="https://www.Instagram.com/"
+                class="social__link"
+                target="_blank"
+                title="Instagram"
+              >
                 <svg class="icon"><use xlink:href="#icon-instagram"></use></svg
               ></a>
             </li>
@@ -97,10 +122,36 @@
         </div>
       </header>
 
-      <div class="banner"></div>
+      <div class="banner">
+        <div class="swiper banner__slider js-banner-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide banner__slide">
+              <h2 class="banner__titel">SIMPLE & MODERN</h2>
+              <p class="banner__description">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+            <div class="swiper-slide banner__slide">
+              <h2 class="banner__titel">SIMPLE & MODERN2</h2>
+              <p class="banner__description">WE MAKE THE WORLD BEAUTIFUL EVERYDAY2</p>
+            </div>
+            <div class="swiper-slide banner__slide">
+              <h2 class="banner__titel">SIMPLE & MODERN3</h2>
+              <p class="banner__description">WE MAKE THE WORLD BEAUTIFUL EVERYDAY3</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="banner__scroll">
+          <a class="scroll" href="#">
+            <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.90479 1.11105C8.9606 1.16685 8.9885 1.23103 8.9885 1.30357C8.9885 1.37612 8.9606 1.44029 8.90479 1.49609L5.00412 5.39676C4.94832 5.45257 4.88415 5.48047 4.8116 5.48047C4.73906 5.48047 4.67488 5.45257 4.61908 5.39676L0.71841 1.49609C0.662606 1.44029 0.634705 1.37612 0.634705 1.30357C0.634705 1.23103 0.662606 1.16685 0.71841 1.11105L1.13694 0.692522C1.19274 0.636718 1.25691 0.608817 1.32946 0.608817C1.402 0.608817 1.46618 0.636718 1.52198 0.692522L4.8116 3.98214L8.10122 0.692522C8.15703 0.636718 8.2212 0.608817 8.29375 0.608817C8.36629 0.608817 8.43046 0.636718 8.48627 0.692522L8.90479 1.11105Z" fill="white"/>
+              </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- * Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
